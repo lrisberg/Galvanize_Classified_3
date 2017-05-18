@@ -1,0 +1,13 @@
+<ul class="nav nav-pills">
+  <li role="presentation" class="active">
+    <input ng-model="$ctrl.filter" type="search" class="form-control input-sm search-form" placeholder="Filter">
+  </li>
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      Sort By {{$ctrl.sortOption.display}}<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li ng-repeat="option in $ctrl.sortOptions" ng-click="$ctrl.sortOption = option"><a href="#">Sort By {{option.display}}</a></li>
+      </ul>
+    </li>
+  </ul>

@@ -1,0 +1,13 @@
+<main class="container">
+
+  <div class="pull-right">
+    <p><a class="btn btn-info" ng-click="$ctrl.toggleForm()">New Ad</a></p>
+  </div>
+
+  <cl-filter-sort sort-option="$ctrl.sortOption" sort-options="$ctrl.sortOptions" filter="$ctrl.filter"></cl-filter-sort>
+
+  <cl-new-ad-form ng-if="$ctrl.showForm" ads="$ctrl.ads" show-form="$ctrl.showForm"></cl-new-ad-form>
+
+  <cl-ad ng-repeat="ad in $ctrl.ads | filter:$ctrl.filter | orderBy:$ctrl.sortOption.property" ad="ad" ads="$ctrl.ads"></cl-ad>
+
+</main>

@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-8">
+
+    <form ng-submit="$ctrl.createAd()">
+      <div>
+        <label for="title">Title</label>
+        <input id="title" class="form-control" ng-model="$ctrl.newAd.title">
+      </div>
+      <div>
+        <label for="body">Description</label>
+        <textarea id="body" class="form-control" ng-model="$ctrl.newAd.description"></textarea>
+      </div>
+      <div>
+        <label for="price">Price</label>
+        <input id="price" class="form-control" ng-model="$ctrl.newAd.price">
+      </div>
+      <div>
+        <label for="item_image">Item Image</label>
+        <input id="item-image" class="form-control" ng-model="$ctrl.newAd.item_image">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">
+          Create Ad
+        </button>
+      </div>
+    </form>
+
+  </div>
+</div>
