@@ -8,6 +8,12 @@
       templateUrl: '/views/clNav.html'
     })
 
+    .component('clFooter', {
+      controller: 'clFooterController',
+      controllerAs: '$ctrl',
+      templateUrl: '/views/clFooter.html'
+    })
+
     .component('clMain', {
       controller: 'clMainController',
       controllerAs: '$ctrl',

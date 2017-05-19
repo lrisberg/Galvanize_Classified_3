@@ -2,6 +2,7 @@
   angular
     .module('app')
     .controller('clNavController', clNavController)
+    .controller('clFooterController', clFooterController)
     .controller('clMainController', clMainController)
     .controller('clAdController', clAdController)
     .controller('clNewAdFormController', clNewAdFormController)
@@ -9,6 +10,10 @@
     .controller('clFilterSortController', clFilterSortController)
 
   function clNavController() {
+    const vm = this;
+  }
+
+  function clFooterController() {
     const vm = this;
   }
 
